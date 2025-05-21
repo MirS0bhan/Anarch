@@ -1,7 +1,12 @@
 [package]
 name = "anarch-rs"
+description = "archlinux conf manger"
+repository = "https://github.com/mirs0bhan/Anarch"
+readme = "README.md"
 version = "0.1.0"
 edition = "2024"
+include = ["**/*.rs"]
+license-file = "LICENSE"
 
 [dependencies]
 serde = { version = "1.0.219", features = ["derive"] }
