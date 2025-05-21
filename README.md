@@ -3,6 +3,7 @@
 [![Repository](https://img.shields.io/badge/GitHub-Anarch-blue?logo=github)](https://github.com/MirS0bhan/Anarch)
 
 **Anarch** is an Arch Linux configuration manager, written in Rust.
+anarch is a lightweight tool designed to uniformly manage dotfiles and packages across Arch-based Linux systems. It simplifies system configuration by combining dotfile management and package installation into a single declarative TOML config file, making your setup reproducible, version-controlled, and easy to maintain.
 
 ## Features
 
