@@ -14,14 +14,14 @@ anarch is a lightweight tool designed to uniformly manage dotfiles and packages 
 
 ### Installation
 
-Clone the repository:
-```sh
-git clone https://github.com/MirS0bhan/Anarch.git
-cd Anarch
+- Using cargo :
+```shell
+ cargo install anarch
 ```
-Build the project:
-```sh
-cargo build --release
+
+- using AUR :
+```shell
+paru -S anarch-bin
 ```
 
 ### Usage
