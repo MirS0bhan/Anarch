@@ -1,5 +1,5 @@
 [package]
-name = "anarch-rs"
+name = "anarch"
 description = "archlinux conf manger"
 repository = "https://github.com/mirs0bhan/Anarch"
 readme = "README.md"
