@@ -3,6 +3,7 @@ use std::path::PathBuf;
 
 mod anarch;
 mod cli;
+mod utils;
 
 use crate::anarch::{AnarchConfig, PackageManager};
 
@@ -13,13 +14,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let config_file: PathBuf = anarch_cli
         .config
-        .unwrap_or_else(|| PathBuf::from(DEFAULT_PATH));
+        .unwrap_or_else(|| PathBuf::from(utils::expand_tilde(DEFAULT_PATH)));
 
     match &anarch_cli.command {
         cli::Commands::Apply => {
             let config = AnarchConfig::load(&config_file)?;
             let package_manager = PackageManager::from(&config);
-            package_manager.install_all();
+            let _ = package_manager.install_all();
 
             println!("Configuration applied successfully!");
         }
